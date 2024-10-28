@@ -1,0 +1,46 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center bg-cover bg-center bg-[url(https://images.unsplash.com/photo-1524721696987-b9527df9e512?q=80&w=1033&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+  <div class="w-96 h-[60vh] bg-white px-20 py-5 rounded-md">
+    <h1
+      class="font-semibold capitalize tracking-tighter text-2xl text-center mb-3"
+    >
+      Welcome to pintrest
+    </h1>
+    <form action="/login" method="post">
+      <input
+        class="px-3 py-2 mb-3 rounded-lg block w-full border border-2 border-zinc-400"
+        type="text"
+        placeholder="username"
+        name="username"
+      />
+      <input
+        class="px-3 py-2 mb-2 rounded-lg border border-2 border-zinc-400 block w-full"
+        type="password"
+        placeholder="password"
+        name="password"
+      />
+      <a href="" class="font-semibold text-zinc-500 capitalize text-sm"
+        >Forgot your password?</a
+      >
+      <input
+        class="text-center cursor-pointer mt-2 mb-2 rounded-full text-white bg-red-600 py-2 w-full block"
+        type="submit" 
+        value="Login"
+      />
+    </form>
+    <p class="text-xs text-center mb-2">
+      By continuing, you agree to Pinterest's
+      <a href="" class="font-semibold">Terms of Service</a> and acknowledge
+      you've read our <a href="" class="font-semibold">Privacy Policy</a>.
+      <a href="" class="font-semibold">Notice at collection</a>.
+    </p>
+    <hr />
+    <p class="text-xs text-center mt-2">
+      Not on Pinterest yet? <a href="/register" class="font-semibold">Sign up</a>
+    </p>
+    <p class="text-xs text-cente mt-2">
+      Are you a business? <a href="" class="font-semibold">Get started here!</a>
+    </p>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>

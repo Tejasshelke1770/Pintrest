@@ -1,0 +1,14 @@
+<% include ./partials/header %>
+<div class="w-full h-screen px-10 py-5 bg-zinc-800 text-white  ">
+    <div class="flex flex-wrap  gap-8">
+    <% posts.forEach(post => { %>
+        <a href="/show/posts/<%= post._id %> ">
+     <div class="card  w-44 h-44   rounded-lg overflow-none ">
+        <img class="w-full h-full  object-cover rounded-lg" src="/uploads/<%=post.image  %>" alt="">
+     </div>
+     <h3><%=post.title  %></h3>
+    </a>
+    <% }) %>
+</div>
+</div>
+<% include ./partials/footer %>

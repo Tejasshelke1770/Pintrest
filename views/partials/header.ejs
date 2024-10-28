@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+  <% if (nav === true) { %>
+    <div class="w-full h-10vh px-10 py-2 flex justify-between items-center text-white bg-zinc-800">
+      <h3 class="font-semibold text-xl">Pintrest</h3>
+      <div class="flex gap-10 font-semibold items-center">
+        <a href="/profile">Profile</a>
+        <a href="/feed">Feed</a>
+        <a class="bg-red-500 rounded-lg text-white px-3 py-1" href="/logout">Logout</a>
+      </div>
+    </div>
+  <% } %>
+
